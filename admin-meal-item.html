@@ -101,10 +101,9 @@
         }
     </style>
 </head>
-
 <body>
     <div class="sidebar">
-        <h2>Admin Panel</h2>
+        <h2>Administration Panel</h2>
         <a href="adminindex.html">Dashboard</a>
         <a href="admin-meal-plan.html">Meal Plans</a>
         <a href="admin-meal-items.html">Meal Items</a>
@@ -185,6 +184,7 @@
         const price = document.querySelector(".form-container input[type='number']").value.trim();
         const image = document.querySelector(".form-container input[type='file']").files[0];
 
+        
         if (!name || !price || !image) {
             alert("Please fill in all fields and select an image.");
             return;
